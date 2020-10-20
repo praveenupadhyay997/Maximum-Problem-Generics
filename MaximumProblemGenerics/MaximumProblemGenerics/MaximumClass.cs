@@ -18,7 +18,7 @@ namespace MaximumProblemGenerics
         /// <param name="second"></param>
         /// <param name="third"></param>
         /// <returns></returns>
-        public static int MaximumIntegerNumberAmongThree(int first, int second, int third)
+        public static int MaximumNumberAmongThree(int first, int second, int third)
         {
             //Use of Compare to function so as to compute the maximum values
             if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
@@ -39,7 +39,7 @@ namespace MaximumProblemGenerics
         /// <param name="second"></param>
         /// <param name="third"></param>
         /// <returns></returns>
-        public static float MaximumIntegerNumberAmongThree(float first, float second, float third)
+        public static float MaximumNumberAmongThree(float first, float second, float third)
         {
             //Use of Compare to function so as to compute the maximum values
             if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
