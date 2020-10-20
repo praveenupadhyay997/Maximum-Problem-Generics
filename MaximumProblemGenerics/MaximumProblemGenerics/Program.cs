@@ -14,11 +14,20 @@ namespace MaximumProblemGenerics
             Console.WriteLine("======================================");
             Console.WriteLine("Welcome to Maximum Computation Problem");
             Console.WriteLine("======================================");
-            int maximumNumber = MaximumClass.MaximumIntegerNumberAmongThree(10, 30, 20);
+            //Calling to get the integral maximum value
+            int maximumNumber = MaximumClass.MaximumNumberAmongThree(10, 30, 20);
+            //Exception condition when all equal numbers are passed
             if (maximumNumber == 0)
                 Console.WriteLine("All three Numbers are equal");
             else
                 Console.WriteLine("Maximum Number =" + maximumNumber);
+            //Calling to get the integral maximum value
+            float maximum = MaximumClass.MaximumNumberAmongThree(10.5f, 15.5f, 20.6f);
+            //Exception condition when all equal numbers are passed
+            if (maximumNumber == 0)
+                Console.WriteLine("All three Numbers are equal");
+            else
+                Console.WriteLine("Maximum Number =" + maximum);
         }
     }
 }
