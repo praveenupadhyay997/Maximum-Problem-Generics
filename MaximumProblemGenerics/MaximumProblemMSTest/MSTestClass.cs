@@ -12,6 +12,8 @@ namespace MaximumProblemMSTest
         [DataRow(30, 20, 10)]
         // TC 1.2- Giving the maximum number at second position and comparing with the max number returned from maximum function
         [DataRow(20, 30, 10)]
+        // TC 1.3- Giving the maximum number at third position and comparing with the max number returned from maximum function
+        [DataRow(20, 10, 30)]
         [TestMethod]
         public void TestMethodForIntegralInputs(int first, int second, int third)
         {
@@ -31,6 +33,16 @@ namespace MaximumProblemMSTest
                 maximumClass = new MaximumClass();
                 //Act
                 int expected = second;
+                int actual = MaximumClass.MaximumIntegerNumberAmongThree(first, second, third);
+                //Assert
+                Assert.AreEqual(expected, actual);
+            }
+            else
+            {
+                //Arrange
+                maximumClass = new MaximumClass();
+                //Act
+                int expected = third;
                 int actual = MaximumClass.MaximumIntegerNumberAmongThree(first, second, third);
                 //Assert
                 Assert.AreEqual(expected, actual);
