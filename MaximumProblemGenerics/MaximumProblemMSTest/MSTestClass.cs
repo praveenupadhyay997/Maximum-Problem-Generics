@@ -1,12 +1,12 @@
 using MaximumProblemGenerics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
 namespace MaximumProblemMSTest
 {
     [TestClass]
     public class MSTestClass
     {
-        MaximumClass maximumClass = null;
         [TestCategory("Maximum Check For Integer")]
         // TC 1.1- Giving the maximum number at first position and comparing with the max number returned from maximum function
         [DataRow(30, 20, 10)]
@@ -20,30 +20,30 @@ namespace MaximumProblemMSTest
             if (first == 30)
             {
                 //Arrange
-                maximumClass = new MaximumClass();
+                MaximumClass<int> maximumClass = new MaximumClass<int>();
                 //Act
                 int expected = first;
-                int actual = MaximumClass.MaximumNumberAmongThree(first, second, third);
+                int actual = MaximumClass<int>.MaximumNumberAmongThree(first, second, third);
                 //Assert
                 Assert.AreEqual(expected, actual);
             }
             else if (second == 30)
             {
                 //Arrange
-                maximumClass = new MaximumClass();
+                MaximumClass<int> maximumClass = new MaximumClass<int>();
                 //Act
                 int expected = second;
-                int actual = MaximumClass.MaximumNumberAmongThree(first, second, third);
+                int actual = MaximumClass<int>.MaximumNumberAmongThree(first, second, third);
                 //Assert
                 Assert.AreEqual(expected, actual);
             }
             else
             {
                 //Arrange
-                maximumClass = new MaximumClass();
+                MaximumClass<int> maximumClass = new MaximumClass<int>();
                 //Act
                 int expected = third;
-                int actual = MaximumClass.MaximumNumberAmongThree(first, second, third);
+                int actual = MaximumClass<int>.MaximumNumberAmongThree(first, second, third);
                 //Assert
                 Assert.AreEqual(expected, actual);
             }
@@ -62,30 +62,30 @@ namespace MaximumProblemMSTest
             if (first == 30.5)
             {
                 //Arrange
-                maximumClass = new MaximumClass();
+                MaximumClass<float> maximumClass = new MaximumClass<float>();
                 //Act
                 float expected = first;
-                float actual = MaximumClass.MaximumNumberAmongThree(first, second, third);
+                float actual = MaximumClass<float>.MaximumNumberAmongThree(first, second, third);
                 //Assert
                 Assert.AreEqual(expected, actual);
             }
             else if (second == 30.5)
             {
                 //Arrange
-                maximumClass = new MaximumClass();
+                MaximumClass<float> maximumClass = new MaximumClass<float>();
                 //Act
                 float expected = second;
-                float actual = MaximumClass.MaximumNumberAmongThree(first, second, third);
+                float actual = MaximumClass<float>.MaximumNumberAmongThree(first, second, third);
                 //Assert
                 Assert.AreEqual(expected, actual);
             }
             else
             {
                 //Arrange
-                maximumClass = new MaximumClass();
+                MaximumClass<float> maximumClass = new MaximumClass<float>();
                 //Act
                 float expected = third;
-                float actual = MaximumClass.MaximumNumberAmongThree(first, second, third);
+                float actual = MaximumClass<float>.MaximumNumberAmongThree(first, second, third);
                 //Assert
                 Assert.AreEqual(expected, actual);
             }
@@ -104,30 +104,30 @@ namespace MaximumProblemMSTest
             if (first == "Peach")
             {
                 //Arrange
-                maximumClass = new MaximumClass();
+                MaximumClass<string> maximumClass = new MaximumClass<string>();
                 //Act
                 string expected = first;
-                string actual = MaximumClass.MaximumAmongThree(first, second, third);
+                string actual = MaximumClass<string>.MaximumAmongThree(first, second, third);
                 //Assert
                 Assert.AreEqual(expected, actual);
             }
             else if (second == "Peach")
             {
                 //Arrange
-                maximumClass = new MaximumClass();
+                MaximumClass<string> maximumClass = new MaximumClass<string>();
                 //Act
                 string expected = second;
-                string actual = MaximumClass.MaximumAmongThree(first, second, third);
+                string actual = MaximumClass<string>.MaximumAmongThree(first, second, third);
                 //Assert
                 Assert.AreEqual(expected, actual);
             }
             else
             {
                 //Arrange
-                maximumClass = new MaximumClass();
+                MaximumClass<string> maximumClass = new MaximumClass<string>();
                 //Act
                 string expected = third;
-                string actual = MaximumClass.MaximumAmongThree(first, second, third);
+                string actual = MaximumClass<string>.MaximumAmongThree(first, second, third);
                 //Assert
                 Assert.AreEqual(expected, actual);
             }
