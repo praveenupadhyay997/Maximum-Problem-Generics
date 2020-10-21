@@ -1,10 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="MaximumGenericClass.cs" company="Bridgelabz">
+//   Copyright © 2018 Company
+// </copyright>
+// <creator Name="Praveen Kumar Upadhyay"/>
+// --------------------------------------------------------------------------------------------------------------------
 namespace MaximumProblemGenerics
 {
-    public class MaximuGenericClass<T> where T : IComparable
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+    public class MaximumGenericClass<T> where T : IComparable
     {
         /// <summary>
         /// Member variable defined for three inputs
@@ -17,7 +22,7 @@ namespace MaximumProblemGenerics
         /// <param name="first"></param>
         /// <param name="second"></param>
         /// <param name="third"></param>
-        public MaximuGenericClass(T first, T second, T third)
+        public MaximumGenericClass(T first, T second, T third)
         {
             this.first = first;
             this.second = second;
@@ -50,7 +55,7 @@ namespace MaximumProblemGenerics
         /// <returns></returns>
         public T MaximumMethod()
         {
-            T maximumValue = MaximuGenericClass<T>.MaximumAmongThreeGenericInput(this.first, this.second, this.third);
+            T maximumValue = MaximumGenericClass<T>.MaximumAmongThreeGenericInput(this.first, this.second, this.third);
             //REturning the generic output
             return maximumValue;
         }
