@@ -60,6 +60,17 @@ namespace MaximumProblemGenerics
                 Console.WriteLine("All three Words are Same");
             else
                 Console.WriteLine("Maximum Word Lexicographically=" + maximumStringValue);
+
+            Console.WriteLine("===================================================");
+            Console.WriteLine("Using the Maximum Generic Array Class Functionality");
+            Console.WriteLine("===================================================");
+            //Initialising an array to pass to the parameterised constructor
+            int[] array = { 105, 203, 122, 432 };
+            // Creating instance of the Maximum Generic Class for array and passing an array parameter
+            MaximumGenericClassArrays<int> maximumGeneric = new MaximumGenericClassArrays<int>(array);
+            // Calling the maximum method to get the largest value based on sorting
+            int largestValue = maximumGeneric.MaximumMethod();
+            Console.WriteLine("Maximum Value in the Array = "+largestValue);
         }
     }
 }

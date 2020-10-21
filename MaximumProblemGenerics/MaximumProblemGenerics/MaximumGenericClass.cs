@@ -1,9 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="MaximumGenericClass.cs" company="Bridgelabz">
+//   Copyright © 2018 Company
+// </copyright>
+// <creator Name="Praveen Kumar Upadhyay"/>
+// --------------------------------------------------------------------------------------------------------------------
 namespace MaximumProblemGenerics
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
     public class MaximumGenericClass<T> where T : IComparable
     {
         /// <summary>
