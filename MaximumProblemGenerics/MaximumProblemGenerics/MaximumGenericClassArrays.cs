@@ -56,6 +56,14 @@ namespace MaximumProblemGenerics
             var maximumValue = MaximumValue(this.arrayValue);
             return maximumValue;
         }
+        /// <summary>
+        /// UC-5 Printing the maximum value on basis of internal calling of maximum method
+        /// </summary>
+        public void PrintMaximumValue()
+        {
+            var maximumValue = MaximumValue(this.arrayValue);
+            Console.WriteLine("Maximum Value in the Array = " + maximumValue);
+        }
 
     }
 }
