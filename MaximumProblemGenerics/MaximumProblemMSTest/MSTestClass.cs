@@ -1,9 +1,15 @@
-using MaximumProblemGenerics;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="MSTestClass.cs" company="Bridgelabz">
+//   Copyright © 2018 Company
+// </copyright>
+// <creator Name="Praveen Kumar Upadhyay"/>
+// --------------------------------------------------------------------------------------------------------------------
 namespace MaximumProblemMSTest
 {
+    using MaximumProblemGenerics;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using System;
+
     [TestClass]
     public class MSTestClass
     {
@@ -131,6 +137,49 @@ namespace MaximumProblemMSTest
                 //Assert
                 Assert.AreEqual(expected, actual);
             }
+        }
+        [TestCategory("Maximum Check For Generic Inputs")]
+        // TC -Passing the integer inputs
+        [DataRow(30, 20, 10)]
+        [TestMethod]
+        public void TestMethodForGenericInputs(int first, int second, int third)
+        {
+            //Arrange
+            MaximumGenericClass<int> maximumClass = new MaximumGenericClass<int>(first, second, third);
+            //Act
+            int expected = 30;
+            int actual = maximumClass.MaximumMethod();
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestCategory("Maximum Check For Generic Inputs")]
+        // TC -Passing the floating point inputs
+        [DataRow(30.5f, 20.5f, 10.5f)]
+        [TestMethod]
+        public void TestMethodForGenericInputs(float first, float second, float third)
+        {
+            //Arrange
+            MaximumGenericClass<float> maximumClass = new MaximumGenericClass<float>(first, second, third);
+            //Act
+            float expected = 30.5f;
+            float actual = maximumClass.MaximumMethod();
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestCategory("Maximum Check For Generic Inputs")]
+        // TC -Passing the string inputs
+        [DataRow("Apple", "Banana", "Peach")]
+        [TestMethod]
+        public void TestMethodForGenericInputs(string first, string second, string third)
+        {
+            //Arrange
+            MaximumGenericClass<string> maximumClass = new MaximumGenericClass<string>(first, second, third);
+            //Act
+            string expected = "Peach";
+            string actual = maximumClass.MaximumMethod();
+            //Assert
+            Assert.AreEqual(expected, actual);
         }
     }
 }

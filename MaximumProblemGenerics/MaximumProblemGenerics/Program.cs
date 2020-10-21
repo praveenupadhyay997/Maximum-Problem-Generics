@@ -40,21 +40,21 @@ namespace MaximumProblemGenerics
             Console.WriteLine("Using the Maximum Generic Class Functionality");
             Console.WriteLine("=============================================");
             //Calling to get the integral maximum value
-            int maximumValue = MaximuGenericClass<int>.MaximumAmongThreeGenericInput(10, 30, 20);
+            int maximumValue = MaximumGenericClass<int>.MaximumAmongThreeGenericInput(10, 30, 20);
             //Exception condition when all equal numbers are passed
             if (maximumValue == default)
                 Console.WriteLine("All three Numbers are equal");
             else
                 Console.WriteLine("Maximum Number =" + maximumValue);
             //Calling to get the floating point maximum value
-            float maximumFloatValue = MaximuGenericClass<float>.MaximumAmongThreeGenericInput(10.5f, 15.5f, 20.6f);
+            float maximumFloatValue = MaximumGenericClass<float>.MaximumAmongThreeGenericInput(10.5f, 15.5f, 20.6f);
             //Exception condition when all equal numbers are passed
             if (maximumFloatValue == default)
                 Console.WriteLine("All three Numbers are equal");
             else
                 Console.WriteLine("Maximum Number =" + maximumFloatValue);
             //Calling to get the string maximum value
-            string maximumStringValue = MaximuGenericClass<string>.MaximumAmongThreeGenericInput("Apple", "Peach", "Banana");
+            string maximumStringValue = MaximumGenericClass<string>.MaximumAmongThreeGenericInput("Apple", "Peach", "Banana");
             //Exception condition when all equal numbers are passed
             if (maximumStringValue == default)
                 Console.WriteLine("All three Words are Same");
