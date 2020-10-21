@@ -75,7 +75,7 @@ namespace MaximumProblemGenerics
         }
 
         /// <summary>
-        /// Function to find the maximum among passed three string values lexicographically
+        /// Function to find the maximum among passed three generic values
         /// </summary>
         /// <param name="first"></param>
         /// <param name="second"></param>
