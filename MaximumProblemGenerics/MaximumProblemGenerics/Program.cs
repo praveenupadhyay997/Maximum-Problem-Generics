@@ -69,8 +69,7 @@ namespace MaximumProblemGenerics
             // Creating instance of the Maximum Generic Class for array and passing an array parameter
             MaximumGenericClassArrays<int> maximumGeneric = new MaximumGenericClassArrays<int>(array);
             // Calling the maximum method to get the largest value based on sorting
-            int largestValue = maximumGeneric.MaximumMethod();
-            Console.WriteLine("Maximum Value in the Array = "+largestValue);
+            maximumGeneric.PrintMaximumValue();
         }
     }
 }
